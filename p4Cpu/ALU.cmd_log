@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ise_save/p4Cpu/ALU.xst" -ofn "D:/ise_save/p4Cpu/ALU.syr" 

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ise_save/p4Cpu/datapath.xst" -ofn "D:/ise_save/p4Cpu/datapath.syr" 

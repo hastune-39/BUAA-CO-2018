@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/ise_save/p4Cpu/GRF.xst" -ofn "D:/ise_save/p4Cpu/GRF.syr" 
+xst -intstyle ise -ifn "D:/ise_save/p4Cpu/GRF.xst" -ofn "D:/ise_save/p4Cpu/GRF.syr" 

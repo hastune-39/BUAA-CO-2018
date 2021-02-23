@@ -1,0 +1,51 @@
+Running: D:\code_software\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/code_software/ise_save/P7CPU/mips_txt_isim_beh.exe -prj D:/code_software/ise_save/P7CPU/mips_txt_beh.prj work.mips_txt work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/W_register.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/M_register.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/MAD.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/IFU.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/GRF.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/E_register.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/EXT.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/D_register.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/DM.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/CP0.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/controller.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/compare.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/ALU.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/P7_standard_timer_2019.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/datapath.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/Bridge.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/mips.v" into library work
+Analyzing Verilog file "D:/code_software/ise_save/P7CPU/tb_mips.v" into library work
+Analyzing Verilog file "D:/code_software/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module IFU
+Compiling module D_register
+Compiling module GRF
+Compiling module EXT
+Compiling module compare
+Compiling module E_register
+Compiling module ALU
+Compiling module MAD
+Compiling module M_register
+Compiling module DM
+Compiling module CP0
+Compiling module W_register
+Compiling module controller
+Compiling module datapath
+Compiling module Bridge
+Compiling module TC
+Compiling module mips
+Compiling module mips_txt
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 19 Verilog Units
+Built simulation executable D:/code_software/ise_save/P7CPU/mips_txt_isim_beh.exe
+Fuse Memory Usage: 36392 KB
+Fuse CPU Usage: 1077 ms

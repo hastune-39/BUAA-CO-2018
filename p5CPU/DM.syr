@@ -1,0 +1,1289 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: DM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DM.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DM"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : DM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\ise_save\p4Cpu\DM.v" into library work
+Parsing module <DM>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <DM>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DM>.
+    Related source file is "D:\ise_save\p4Cpu\DM.v".
+WARNING:Xst:647 - Input <Address<31:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1024-bit register for signal <n50849[1023:0]>.
+    Found 6-bit adder for signal <n50934> created at line 59.
+    Found 6-bit adder for signal <n50935> created at line 59.
+    Found 6-bit adder for signal <n50936> created at line 59.
+    Found 6-bit adder for signal <n50937> created at line 59.
+    Found 6-bit adder for signal <n50938> created at line 59.
+    Found 6-bit adder for signal <n50939> created at line 59.
+    Found 6-bit adder for signal <n50940> created at line 59.
+    Found 6-bit adder for signal <n50941> created at line 59.
+    Found 6-bit adder for signal <n50942> created at line 59.
+    Found 6-bit adder for signal <n50943> created at line 59.
+    Found 6-bit adder for signal <n50944> created at line 59.
+    Found 6-bit adder for signal <n50945> created at line 59.
+    Found 6-bit adder for signal <n50946> created at line 59.
+    Found 6-bit adder for signal <n50947> created at line 59.
+    Found 6-bit adder for signal <n50948> created at line 61.
+    Found 6-bit adder for signal <n50950> created at line 67.
+    Found 6-bit adder for signal <n50951> created at line 67.
+    Found 6-bit adder for signal <n50952> created at line 67.
+    Found 6-bit adder for signal <n50953> created at line 67.
+    Found 6-bit adder for signal <n50954> created at line 67.
+    Found 6-bit adder for signal <n50955> created at line 67.
+    Found 6-bit adder for signal <n50956> created at line 69.
+    Found 32-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][31]_wide_mux_1677_OUT> created at line 56.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_1710_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_1744_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_1778_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_1812_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_1846_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_1880_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_1914_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_1948_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_1982_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2016_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2050_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2084_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2118_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2152_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2186_o> created at line 59.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_PWR_1_o_equal_2781_o> created at line 61.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2813_o> created at line 67.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2847_o> created at line 67.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2881_o> created at line 67.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2915_o> created at line 67.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2949_o> created at line 67.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_2983_o> created at line 67.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_Address[4]_Mux_3017_o> created at line 67.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][31]_Mux_3858_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][30]_Mux_3859_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][29]_Mux_3860_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][28]_Mux_3861_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][27]_Mux_3862_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][26]_Mux_3863_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][25]_Mux_3864_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][24]_Mux_3865_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][23]_Mux_3866_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][22]_Mux_3867_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][21]_Mux_3868_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][20]_Mux_3869_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][19]_Mux_3870_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][18]_Mux_3871_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][17]_Mux_3872_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][16]_Mux_3873_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][15]_Mux_3874_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][14]_Mux_3875_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][13]_Mux_3876_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][12]_Mux_3877_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][11]_Mux_3878_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][10]_Mux_3879_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][9]_Mux_3880_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][8]_Mux_3881_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][7]_Mux_3882_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][6]_Mux_3883_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][5]_Mux_3884_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][4]_Mux_3885_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][3]_Mux_3886_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][2]_Mux_3887_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][1]_Mux_3888_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[4]_memory[31][0]_Mux_3889_o> created at line 69.
+    Found 1-bit 32-to-1 multiplexer for signal <Address[1]_PWR_1_o_equal_3892_o> created at line 69.
+    Found 32-bit 4-to-1 multiplexer for signal <DO> created at line 55.
+    Found 6-bit comparator lessequal for signal <n2081> created at line 47
+    Found 6-bit comparator lessequal for signal <n4196> created at line 47
+    Found 6-bit comparator lessequal for signal <n6311> created at line 47
+    Found 6-bit comparator lessequal for signal <n8426> created at line 47
+    Found 6-bit comparator lessequal for signal <n10541> created at line 47
+    Found 6-bit comparator lessequal for signal <n12656> created at line 47
+    Found 6-bit comparator lessequal for signal <n14771> created at line 47
+    Found 6-bit comparator lessequal for signal <n16886> created at line 47
+    Found 6-bit comparator lessequal for signal <n19001> created at line 47
+    Found 6-bit comparator lessequal for signal <n21116> created at line 47
+    Found 6-bit comparator lessequal for signal <n23231> created at line 47
+    Found 6-bit comparator lessequal for signal <n25346> created at line 47
+    Found 6-bit comparator lessequal for signal <n27461> created at line 47
+    Found 6-bit comparator lessequal for signal <n29576> created at line 47
+    Found 6-bit comparator lessequal for signal <n31691> created at line 47
+    Found 6-bit comparator lessequal for signal <n35887> created at line 48
+    Found 6-bit comparator lessequal for signal <n38002> created at line 48
+    Found 6-bit comparator lessequal for signal <n40117> created at line 48
+    Found 6-bit comparator lessequal for signal <n42232> created at line 48
+    Found 6-bit comparator lessequal for signal <n44347> created at line 48
+    Found 6-bit comparator lessequal for signal <n46462> created at line 48
+    Found 6-bit comparator lessequal for signal <n48577> created at line 48
+    Found 10-bit comparator lessequal for signal <n50692> created at line 49
+    Summary:
+	inferred  22 Adder/Subtractor(s).
+	inferred 1024 D-type flip-flop(s).
+	inferred  23 Comparator(s).
+	inferred 24666 Multiplexer(s).
+Unit <DM> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 22
+ 6-bit adder                                           : 22
+# Registers                                            : 1
+ 1024-bit register                                     : 1
+# Comparators                                          : 23
+ 10-bit comparator lessequal                           : 1
+ 6-bit comparator lessequal                            : 22
+# Multiplexers                                         : 24666
+ 1-bit 2-to-1 multiplexer                              : 24576
+ 1-bit 32-to-1 multiplexer                             : 56
+ 32-bit 2-to-1 multiplexer                             : 32
+ 32-bit 32-to-1 multiplexer                            : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 22
+ 6-bit adder                                           : 22
+# Registers                                            : 1024
+ Flip-Flops                                            : 1024
+# Comparators                                          : 23
+ 10-bit comparator lessequal                           : 1
+ 6-bit comparator lessequal                            : 22
+# Multiplexers                                         : 24666
+ 1-bit 2-to-1 multiplexer                              : 24576
+ 1-bit 32-to-1 multiplexer                             : 56
+ 32-bit 2-to-1 multiplexer                             : 32
+ 32-bit 32-to-1 multiplexer                            : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <memory_0_32> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_33> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_34> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_35> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_36> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_37> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_38> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_39> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_40> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_41> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_42> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_43> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_44> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_45> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_46> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_47> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_48> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_49> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_50> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_51> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_52> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_53> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_54> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_55> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_56> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_57> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_58> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_59> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_60> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_61> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_62> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_63> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_64> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_65> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_66> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_67> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_68> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_69> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_70> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_71> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_72> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_73> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_74> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_75> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_76> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_77> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_78> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_79> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_80> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_81> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_82> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_83> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_84> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_85> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_86> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_87> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_88> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_89> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_90> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_91> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_92> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_93> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_94> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_95> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_96> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_97> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_98> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_99> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_100> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_101> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_102> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_103> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_104> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_105> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_106> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_107> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_108> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_109> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_110> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_111> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_112> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_113> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_114> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_115> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_116> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_117> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_118> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_119> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_120> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_121> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_122> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_123> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_124> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_125> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_126> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_127> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_160> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_161> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_162> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_163> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_164> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_165> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_166> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_167> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_168> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_169> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_170> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_171> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_172> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_173> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_174> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_175> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_176> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_177> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_178> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_179> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_180> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_181> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_182> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_183> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_184> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_185> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_186> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_187> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_188> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_189> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_190> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_191> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_192> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_193> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_194> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_195> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_196> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_197> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_198> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_199> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_200> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_201> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_202> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_203> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_204> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_205> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_206> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_207> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_208> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_209> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_210> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_211> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_212> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_213> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_214> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_215> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_216> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_217> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_218> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_219> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_220> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_221> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_222> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_223> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_224> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_225> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_226> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_227> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_228> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_229> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_230> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_231> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_232> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_233> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_234> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_235> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_236> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_237> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_238> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_239> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_240> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_241> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_242> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_243> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_244> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_245> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_246> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_247> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_248> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_249> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_250> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_251> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_252> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_253> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_254> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_255> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_288> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_289> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_290> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_291> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_292> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_293> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_294> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_295> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_296> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_297> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_298> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_299> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_300> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_301> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_302> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_303> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_304> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_305> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_306> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_307> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_308> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_309> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_310> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_311> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_312> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_313> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_314> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_315> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_316> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_317> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_318> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_319> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_320> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_321> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_322> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_323> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_324> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_325> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_326> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_327> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_328> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_329> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_330> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_331> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_332> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_333> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_334> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_335> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_336> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_337> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_338> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_339> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_340> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_341> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_342> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_343> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_344> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_345> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_346> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_347> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_348> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_349> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_350> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_351> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_352> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_353> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_354> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_355> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_356> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_357> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_358> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_359> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_360> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_361> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_362> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_363> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_364> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_365> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_366> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_367> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_368> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_369> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_370> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_371> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_372> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_373> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_374> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_375> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_376> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_377> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_378> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_379> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_380> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_381> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_382> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_383> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_416> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_417> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_418> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_419> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_420> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_421> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_422> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_423> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_424> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_425> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_426> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_427> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_428> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_429> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_430> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_431> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_432> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_433> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_434> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_435> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_436> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_437> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_438> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_439> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_440> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_441> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_442> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_443> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_444> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_445> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_446> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_447> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_448> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_449> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_450> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_451> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_452> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_453> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_454> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_455> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_456> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_457> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_458> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_459> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_460> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_461> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_462> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_463> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_464> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_465> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_466> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_467> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_468> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_469> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_470> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_471> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_472> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_473> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_474> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_475> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_476> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_477> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_478> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_479> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_480> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_481> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_482> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_483> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_484> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_485> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_486> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_487> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_488> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_489> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_490> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_491> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_492> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_493> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_494> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_495> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_496> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_497> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_498> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_499> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_500> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_501> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_502> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_503> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_504> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_505> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_506> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_507> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_508> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_509> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_510> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_511> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_544> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_545> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_546> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_547> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_548> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_549> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_550> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_551> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_552> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_553> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_554> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_555> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_556> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_557> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_558> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_559> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_560> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_561> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_562> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_563> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_564> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_565> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_566> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_567> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_568> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_569> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_570> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_571> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_572> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_573> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_574> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_575> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_576> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_577> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_578> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_579> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_580> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_581> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_582> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_583> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_584> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_585> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_586> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_587> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_588> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_589> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_590> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_591> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_592> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_593> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_594> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_595> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_596> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_597> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_598> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_599> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_600> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_601> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_602> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_603> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_604> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_605> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_606> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_607> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_608> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_609> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_610> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_611> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_612> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_613> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_614> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_615> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_616> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_617> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_618> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_619> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_620> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_621> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_622> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_623> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_624> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_625> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_626> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_627> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_628> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_629> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_630> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_631> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_632> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_633> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_634> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_635> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_636> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_637> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_638> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_639> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_672> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_673> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_674> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_675> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_676> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_677> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_678> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_679> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_680> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_681> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_682> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_683> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_684> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_685> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_686> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_687> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_688> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_689> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_690> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_691> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_692> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_693> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_694> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_695> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_696> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_697> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_698> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_699> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_700> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_701> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_702> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_703> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_704> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_705> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_706> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_707> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_708> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_709> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_710> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_711> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_712> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_713> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_714> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_715> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_716> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_717> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_718> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_719> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_720> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_721> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_722> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_723> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_724> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_725> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_726> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_727> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_728> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_729> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_730> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_731> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_732> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_733> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_734> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_735> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_736> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_737> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_738> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_739> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_740> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_741> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_742> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_743> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_744> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_745> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_746> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_747> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_748> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_749> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_750> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_751> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_752> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_753> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_754> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_755> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_756> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_757> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_758> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_759> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_760> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_761> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_762> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_763> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_764> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_765> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_766> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_767> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_800> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_801> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_802> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_803> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_804> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_805> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_806> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_807> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_808> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_809> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_810> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_811> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_812> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_813> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_814> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_815> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_816> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_817> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_818> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_819> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_820> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_821> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_822> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_823> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_824> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_825> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_826> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_827> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_828> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_829> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_830> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_831> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_832> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_833> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_834> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_835> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_836> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_837> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_838> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_839> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_840> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_841> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_842> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_843> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_844> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_845> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_846> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_847> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_848> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_849> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_850> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_851> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_852> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_853> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_854> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_855> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_856> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_857> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_858> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_859> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_860> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_861> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_862> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_863> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_864> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_865> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_866> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_867> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_868> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_869> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_870> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_871> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_872> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_873> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_874> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_875> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_876> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_877> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_878> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_879> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_880> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_881> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_882> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_883> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_884> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_885> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_886> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_887> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_888> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_889> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_890> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_891> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_892> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_893> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_894> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_895> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_928> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_929> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_930> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_931> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_932> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_933> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_934> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_935> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_936> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_937> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_938> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_939> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_940> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_941> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_942> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_943> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_944> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_945> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_946> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_947> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_948> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_949> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_950> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_951> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_952> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_953> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_954> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_955> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_956> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_957> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_958> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_959> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_960> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_961> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_962> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_963> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_964> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_965> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_966> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_967> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_968> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_969> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_970> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_971> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_972> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_973> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_974> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_975> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_976> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_977> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_978> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_979> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_980> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_981> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_982> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_983> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_984> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_985> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_986> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_987> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_988> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_989> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_990> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_991> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_992> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_993> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_994> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_995> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_996> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_997> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_998> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_999> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1000> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1001> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1002> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1003> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1004> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1005> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1006> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1007> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1008> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1009> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1010> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1011> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1012> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1013> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1014> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1015> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1016> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1017> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1018> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1019> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1020> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1021> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1022> of sequential type is unconnected in block <DM>.
+WARNING:Xst:2677 - Node <memory_0_1023> of sequential type is unconnected in block <DM>.
+
+Optimizing unit <DM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DM, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : DM.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 665
+#      LUT2                        : 10
+#      LUT3                        : 35
+#      LUT4                        : 65
+#      LUT5                        : 168
+#      LUT6                        : 354
+#      MUXF7                       : 33
+# FlipFlops/Latches                : 256
+#      FDE                         : 256
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 78
+#      IBUF                        : 46
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             256  out of  126800     0%  
+ Number of Slice LUTs:                  632  out of  63400     0%  
+    Number used as Logic:               632  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    632
+   Number with an unused Flip Flop:     376  out of    632    59%  
+   Number with an unused LUT:             0  out of    632     0%  
+   Number of fully used LUT-FF pairs:   256  out of    632    40%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         101
+ Number of bonded IOBs:                  79  out of    210    37%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 256   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 0.766ns (Maximum Frequency: 1306.336MHz)
+   Minimum input arrival time before clock: 3.009ns
+   Maximum output required time after clock: 3.345ns
+   Maximum combinational path delay: 3.235ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 0.766ns (frequency: 1306.336MHz)
+  Total number of paths / destination ports: 256 / 256
+-------------------------------------------------------------------------
+Delay:               0.766ns (Levels of Logic = 1)
+  Source:            memory_0_0 (FF)
+  Destination:       memory_0_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: memory_0_0 to memory_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.361   0.299  memory_0_0 (memory_0_0)
+     LUT4:I3->O            1   0.097   0.000  _n55152<0>1 (_n55152<0>)
+     FDE:D                     0.008          memory_0_0
+    ----------------------------------------
+    Total                      0.766ns (0.466ns logic, 0.299ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 18496 / 512
+-------------------------------------------------------------------------
+Offset:              3.009ns (Levels of Logic = 5)
+  Source:            Address<9> (PAD)
+  Destination:       memory_0_8 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Address<9> to memory_0_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.688  Address_9_IBUF (Address_9_IBUF)
+     LUT5:I0->O           50   0.097   0.793  Address[9]_GND_1_o_LessThan_1640_o1 (Address[9]_GND_1_o_LessThan_1640_o)
+     LUT6:I1->O            9   0.097   0.416  Address[4]_Address[1]_AND_18234_o1 (Address[4]_Address[1]_AND_18234_o)
+     LUT6:I4->O            8   0.097   0.715  _n55152<904>1 (_n55152<904>1)
+     LUT5:I0->O            1   0.097   0.000  _n55152<904>3 (_n55152<904>)
+     FDE:D                     0.008          memory_0_904
+    ----------------------------------------
+    Total                      3.009ns (0.397ns logic, 2.612ns route)
+                                       (13.2% logic, 86.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1688 / 32
+-------------------------------------------------------------------------
+Offset:              3.345ns (Levels of Logic = 7)
+  Source:            memory_0_775 (FF)
+  Destination:       DO<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: memory_0_775 to DO<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.361   0.561  memory_0_775 (memory_0_775)
+     LUT6:I2->O            2   0.097   0.000  Mmux_Address[4]_memory[31][31]_wide_mux_1677_OUT_329 (Mmux_Address[4]_memory[31][31]_wide_mux_1677_OUT_329)
+     MUXF7:I1->O           1   0.279   0.379  Mmux_Address[4]_memory[31][7]_Mux_3882_o_2_f7 (Address[4]_memory[31][7]_Mux_3882_o)
+     LUT3:I1->O            2   0.097   0.299  Mmux_Address[1]_Address[4]_Mux_1948_o11 (Address[1]_Address[4]_Mux_1948_o)
+     LUT6:I5->O            9   0.097   0.332  Mmux_DO210 (Mmux_DO210)
+     LUT6:I5->O           17   0.097   0.369  Mmux_DO1021 (Mmux_DO102)
+     LUT4:I3->O            1   0.097   0.279  Mmux_DO241 (DO_30_OBUF)
+     OBUF:I->O                 0.000          DO_30_OBUF (DO<30>)
+    ----------------------------------------
+    Total                      3.345ns (1.125ns logic, 2.220ns route)
+                                       (33.6% logic, 66.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1338 / 32
+-------------------------------------------------------------------------
+Delay:               3.235ns (Levels of Logic = 8)
+  Source:            Address<3> (PAD)
+  Destination:       DO<31> (PAD)
+
+  Data Path: Address<3> to DO<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            96   0.001   0.810  Address_3_IBUF (Address_3_IBUF)
+     LUT6:I0->O            2   0.097   0.000  Mmux_Address[4]_memory[31][31]_wide_mux_1677_OUT_329 (Mmux_Address[4]_memory[31][31]_wide_mux_1677_OUT_329)
+     MUXF7:I1->O           1   0.279   0.379  Mmux_Address[4]_memory[31][7]_Mux_3882_o_2_f7 (Address[4]_memory[31][7]_Mux_3882_o)
+     LUT3:I1->O            2   0.097   0.299  Mmux_Address[1]_Address[4]_Mux_1948_o11 (Address[1]_Address[4]_Mux_1948_o)
+     LUT6:I5->O            9   0.097   0.332  Mmux_DO210 (Mmux_DO210)
+     LUT6:I5->O           17   0.097   0.369  Mmux_DO1021 (Mmux_DO102)
+     LUT4:I3->O            1   0.097   0.279  Mmux_DO241 (DO_30_OBUF)
+     OBUF:I->O                 0.000          DO_30_OBUF (DO<30>)
+    ----------------------------------------
+    Total                      3.235ns (0.765ns logic, 2.470ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.766|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 78.00 secs
+Total CPU time to Xst completion: 77.84 secs
+ 
+--> 
+
+Total memory usage is 4815176 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  769 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

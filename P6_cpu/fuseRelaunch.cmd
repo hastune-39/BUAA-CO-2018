@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/code_software/ise_save/P6_cpu/MAD_testbench_isim_beh.exe" -prj "D:/code_software/ise_save/P6_cpu/MAD_testbench_beh.prj" "work.MAD_testbench" "work.glbl" 

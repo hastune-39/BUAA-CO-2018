@@ -1,0 +1,3 @@
+verilog isim_temp "MAD.v"
+verilog isim_temp "MAD_testbench.v"
+verilog isim_temp "D:/code_software/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v"

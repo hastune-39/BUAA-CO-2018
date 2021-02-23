@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ise_save/p4Cpu/EXT.xst" -ofn "D:/ise_save/p4Cpu/EXT.syr" 

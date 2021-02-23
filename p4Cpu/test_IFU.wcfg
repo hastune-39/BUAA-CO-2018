@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/ise_save/p4Cpu/IFU_testbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="IFU_testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/IFU_testbench/instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IFU_testbench/PCadd4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCadd4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCadd4[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IFU_testbench/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IFU_testbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IFU_testbench/PCsel" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCsel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">PCsel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IFU_testbench/imm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">imm[25:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[25:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IFU_testbench/RA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IFU_testbench/alu" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/IFU_testbench/En" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">En</obj_property>
+      <obj_property name="ObjectShortName">En</obj_property>
+   </wvobject>
+</wave_config>

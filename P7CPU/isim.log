@@ -1,0 +1,31 @@
+ISim log file
+Running: D:\code_software\ise_save\P7CPU\mips_txt_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/code_software/ise_save/P7CPU/mips_txt_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                  38@00003000: $ 5 <= 0000ff11
+                  46@00003008: $ 1 <= 7fff0000
+                  50@0000300c: $ 2 <= 7fffffff
+                  54@00003010: $ 1 <= 7fff0000
+                  58@00003014: $ 3 <= 7fffffff
+                  78@00004180: $26 <= 00003018
+                  86@00004184: $26 <= 0000301c
+                  94@0000418c: $26 <= 000c0000
+                  98@00004190: $27 <= 08530000
+                 126@00004180: $26 <= 0000301c
+                 134@00004184: $26 <= 00003020
+                 142@0000418c: $26 <= 000c0000
+                 146@00004190: $27 <= 08530000
+                 170@00003020: $17 <= 23330000
+                 174@00003024: $17 <= 23331212
+                 178@00003028: $18 <= 00001111

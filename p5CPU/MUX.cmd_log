@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ise_save/p4Cpu/MUX.xst" -ofn "D:/ise_save/p4Cpu/MUX.syr" 
